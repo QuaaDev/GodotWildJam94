@@ -4,12 +4,13 @@
 
 [node name="Game" type="Node" unique_id=1988347681 node_paths=PackedStringArray("new_game_button", "load_button", "options_button", "exit_button")]
 script = ExtResource("1_ebmjs")
-new_game_button = NodePath("Control/CenterContainer/VBoxContainer/NewGame")
-load_button = NodePath("Control/CenterContainer/VBoxContainer/Load")
-options_button = NodePath("Control/CenterContainer/VBoxContainer/Options")
-exit_button = NodePath("Control/CenterContainer/VBoxContainer/Exit")
+new_game_button = NodePath("MainMenu/CenterContainer/VBoxContainer/NewGame")
+load_button = NodePath("MainMenu/CenterContainer/VBoxContainer/Load")
+options_button = NodePath("MainMenu/CenterContainer/VBoxContainer/Options")
+exit_button = NodePath("MainMenu/CenterContainer/VBoxContainer/Exit")
+scene_to_load = "uid://mx3xju21c5wv"
 
-[node name="Control" type="Control" parent="." unique_id=875197050]
+[node name="MainMenu" type="Control" parent="." unique_id=875197050]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,7 +18,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CenterContainer" type="CenterContainer" parent="Control" unique_id=1167744017]
+[node name="CenterContainer" type="CenterContainer" parent="MainMenu" unique_id=1167744017]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -25,21 +26,21 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/CenterContainer" unique_id=2113877538]
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu/CenterContainer" unique_id=2113877538]
 layout_mode = 2
 
-[node name="NewGame" type="Button" parent="Control/CenterContainer/VBoxContainer" unique_id=1295538736]
+[node name="NewGame" type="Button" parent="MainMenu/CenterContainer/VBoxContainer" unique_id=1295538736]
 layout_mode = 2
 text = "New Game"
 
-[node name="Load" type="Button" parent="Control/CenterContainer/VBoxContainer" unique_id=1572539157]
+[node name="Load" type="Button" parent="MainMenu/CenterContainer/VBoxContainer" unique_id=1572539157]
 layout_mode = 2
 text = "Load"
 
-[node name="Options" type="Button" parent="Control/CenterContainer/VBoxContainer" unique_id=1546589082]
+[node name="Options" type="Button" parent="MainMenu/CenterContainer/VBoxContainer" unique_id=1546589082]
 layout_mode = 2
 text = "Options"
 
-[node name="Exit" type="Button" parent="Control/CenterContainer/VBoxContainer" unique_id=2001512042]
+[node name="Exit" type="Button" parent="MainMenu/CenterContainer/VBoxContainer" unique_id=2001512042]
 layout_mode = 2
 text = "Exit"

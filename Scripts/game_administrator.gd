@@ -4,6 +4,7 @@ extends Node
 @export var load_button : Button
 @export var options_button : Button
 @export var exit_button : Button
+@export var scene_to_load : String
 
 func _ready() -> void:
 	connect_signals()
@@ -19,6 +20,9 @@ func connect_signals() -> void:
 #------Signals--------
 func new_game_pressed() -> void:
 	print("new game")
+	var new_scene = load(scene_to_load).instantiate()
+	self.add_child(new_scene)
+	get_node("MainMenu").visible = false
 func load_pressed() -> void:
 	print("load")
 func options_pressed() -> void:
