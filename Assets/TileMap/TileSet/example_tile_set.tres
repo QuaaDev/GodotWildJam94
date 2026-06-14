@@ -1,0 +1,17 @@
+[gd_resource type="TileSet" format=3 uid="uid://dleol8ay2jos7"]
+
+[ext_resource type="Texture2D" uid="uid://11q7x8jwdrsk" path="res://place_holders/base_tile_pruebas.png" id="1_t51t4"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8rysi"]
+texture = ExtResource("1_t51t4")
+texture_region_size = Vector2i(72, 72)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[resource]
+tile_shape = 3
+tile_offset_axis = 1
+tile_size = Vector2i(72, 72)
+sources/0 = SubResource("TileSetAtlasSource_8rysi")

@@ -8,7 +8,7 @@ new_game_button = NodePath("MainMenu/CenterContainer/VBoxContainer/NewGame")
 load_button = NodePath("MainMenu/CenterContainer/VBoxContainer/Load")
 options_button = NodePath("MainMenu/CenterContainer/VBoxContainer/Options")
 exit_button = NodePath("MainMenu/CenterContainer/VBoxContainer/Exit")
-scene_to_load = "uid://mx3xju21c5wv"
+scene_to_load = "uid://nsg8ajpf3sjr"
 
 [node name="MainMenu" type="Control" parent="." unique_id=875197050]
 layout_mode = 3
